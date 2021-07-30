@@ -1,0 +1,36 @@
+body 
+{
+    margin: 80px   110px   120px;
+}
+
+
+#formularioIniciarSesion
+{
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 30px   210px  20px;
+}
+
+
+#titulo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#login
+{
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+
+
+#registrarse-enlace
+{
+    margin-left: 20%;
+    margin-bottom: 50px;
+    background: black;
+}
