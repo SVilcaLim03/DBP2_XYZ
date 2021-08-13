@@ -11,8 +11,8 @@
     $_SESSION["username"] = "$username";
     
        
-    $query1 = "SELECT id_personal FROM personal WHERE username='$username' AND password='$password'";
-    $query2 = "SELECT id_cliente FROM cliente_usuario WHERE username='$username' AND password='$password'";
+    $query1 = "SELECT id FROM personal WHERE username='$username' AND password='$password'";
+    $query2 = "SELECT id FROM cliente_usuario WHERE username='$username' AND password='$password'";
 
 	$result1=mysqli_query($conn, $query1);
     $result2=mysqli_query($conn, $query2);

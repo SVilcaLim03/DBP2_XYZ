@@ -38,16 +38,12 @@
     </div>
   </div>
   <button type="button" class="btn btn-primary" id ="submit_button">Iniciar Sesión</button>
-  
 </form>
 
 <div id="registrarse-enlace">
     ¿No eres usuario de Electronic Store?
     <a href="signup.php">Regístrate</a>
 </div>
-</body>
-</html>
-
 <script>
     function formEsValido()
     {
@@ -85,7 +81,7 @@
                     data: cadena,
                     success: function(data) 
                     {
-                        if(data==0)
+                        if(data == 0)
                         {
                             alertify.success("Inicio de sesión exitoso");
 
@@ -100,7 +96,7 @@
 
                             window.setTimeout(function()
                             {
-                                window.location="employer_view.php";
+                                window.location="admin_view.php";
                             } , 2000);
                         }
                         else if (data == 2)
@@ -109,10 +105,10 @@
 
                             window.setTimeout(function()
                             {
-                                window.location="admin_view.php";
+                                window.location="employer_view.php";
                             } , 2000);
                         }
-                        else if (data == 3)
+                        else if (data ==3)
 						{
 							alertify.error("Los datos ingresados son incorrectos.")
 						}
@@ -129,3 +125,6 @@
         })
     })
 </script>
+</body>
+</html>
+

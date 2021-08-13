@@ -18,6 +18,7 @@
     
 
     $_SESSION["username"] = "$username";
+    
                
     $query = "INSERT INTO  cliente_usuario (`nombre`, `apellido`, `edad`, `tarjeta_credito`, `telefono`, `direccion`, `e_mail`, `username`, `password`) 
     VALUES ('$name', '$last_name', '$age', '$creditcard', '$cellphone', '$address', '$email', '$username', '$password');";
